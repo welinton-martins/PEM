@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Intercalacao de vetores</title>
+</head>
+<body>
+	<script>
+		var v = [], l = [], i = 0, s = "";
+
+		do {
+			v[i] = prompt("Digite 5 numeros separados por espaco do vetor " + (i+1) + ":").split(' ');
+			l[i] = v[i].length;
+			i++;
+		}
+		while(l[0] != 5 || l[1] != 5)
+
+		s = "Vetor 1: " + v[0].join(' - ') + "<br>";
+		s += "Vetor 2: " + v[1].join(' - ') + "<br>";
+		s += "Vetor resultante: " + v[0].concat(v[1]).join(" - ") + "<br>";
+
+		document.write(s);
+	</script>
+</body>
+</html>

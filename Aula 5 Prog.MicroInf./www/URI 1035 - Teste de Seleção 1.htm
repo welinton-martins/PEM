@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+    <title>Teste de Seleção 1</title> 
+    <meta charset="utf-8"> 
+</head> 
+<body> 
+    <script> 
+        var input = prompt("Digite os 4 valores separados por espaço:"); 
+        var lines = input.split(' '); 
+         
+        var A = parseInt(lines[0]), B = parseInt(lines[1]), C = parseInt(lines[2]), D = parseInt(lines[3]); 
+       
+        if (B > C && D > A && C + D > A + B && C > 0 && D > 0 && A % 2 === 0) { 
+            document.write("<h1>Valores aceitos</h1>"); 
+        } 
+
+        else { 
+            document.write("<h1>Valores não aceitos</h1>"); 
+        } 
+    </script> 
+</body> 
+</html> 

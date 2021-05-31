@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Excesso de velocidade</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		var VP = Number.parseInt(prompt("Digite a velocidade permitida:"));
+		var VC = Number.parseInt(prompt("Digite a velocidade de um condutor:"));
+
+		var P = ((VP * 20) / 100) + VP;
+
+		if (VC <= VP) {
+			document.write("Sem Multa");
+		}
+		else if (VP < VC && VC <= P) {
+			document.write("Multa Leve");
+		}
+		else if (VC > P) {
+			document.write("Multa Grave");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Repete frutas</title>
+</head>
+<body>
+    <script>
+        var fru = prompt("Fruta: ");
+        var num = Number.parseInt(prompt("Numero: "));
+        var rep = fru;
+        for (var i = 1; i < num; i++) {
+            rep += ' * ' + fru;
+        }
+
+        document.write(rep);
+    </script>
+</body>
+</html>

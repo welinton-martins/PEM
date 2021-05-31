@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>URI 1080 - Maior e Posicao</title>
+</head>
+<body>
+	<script>
+		var v = [], m = 0, p = 0;
+
+		for (var i = 0; i < 10; i++) {
+			v[i] = Number.parseInt(prompt('Digite o ' + (i+1) + ' valor:'));
+
+			if (v[i] > m) {
+				m = v[i];
+				p = i + 1;
+			}
+		}
+
+		document.write(m + '<br>' + p);
+	</script>
+</body>
+</html>

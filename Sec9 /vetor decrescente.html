@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Vetor decrescente</title>
+</head>
+<body>
+	<script>
+		var v = [], d = [0, 0, 0, 0, 0], p = 0, l = 0, s = "";
+
+		do {
+			v = prompt("Digite 5 numeros separados por espaco:").split(' ');
+			l = v.length;
+		}
+		while(l != 5)
+
+		s = "Vetor: " + v + "<br>";
+
+		for (var i = 0; i < l; i++) {
+			for (var j = 0; j < l; j++) {
+				if (Number.parseInt(v[j]) >= Number.parseInt(d[i])) {
+					d[i] = v[j];
+					p = j;
+					console.log(d);
+				}
+			}
+			v[p] = 0;
+			console.log(p);
+		}
+
+		s += "Ordenado: " + d + "<br>";
+
+		document.write(s);
+	</script>
+</body>
+</html>

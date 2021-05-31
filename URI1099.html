@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>URI 1099 - Soma de Impares Consecutivos II</title>
+</head>
+<body>
+	<script>
+		var j = 0,i = 0,X = 0, Y = 0, S = 0;
+
+		var N = Number.parseInt(prompt("Digite a quantidade de casos teste:"));
+
+		var coluns = [];
+		var lines = "";
+
+		for (i = 0; i < N; i++) {
+			lines = prompt("Digite o valor de X e Y separados por espaco: ");
+			coluns = lines.split(' ');
+
+			X = coluns.shift();
+			Y = coluns.shift();
+
+			if (X > Y) {
+				for (j = Y; j < X; j++) {
+					if (j > Y) {
+						if (j % 2 !== 0) {
+							S += j;
+						}
+					}
+				}
+			}
+			else if (Y > X){
+				for (j = X; j < Y; j++) {
+					if (j > X) {
+						if (j % 2 !== 0) {
+							S += j;
+						}	
+					}
+				}
+			}
+
+			document.write(S + "<br>");
+
+			S = 0;
+		}
+	</script>
+</body>
+</html>

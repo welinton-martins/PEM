@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Excesso de velocidade</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		var val = Number.parseFloat(prompt("Digite o valor de moedas depositadas:"));
+		var tro = 0.0;
+
+		if (val >= 1.00 && val < 1.75) {
+			document.write("Tempo: 30 min<br>");
+			
+			if (val !== 1.00) {
+				tro = val - 1.00;
+
+				document.write("Troco R$: " + tro.toFixed(2));
+			}
+		}
+		else if (val >= 1.75 && val < 3.00) {
+			document.write("Tempo: 60 min<br>");
+
+			if (val !== 1.75) {
+				tro = val - 1.75;
+
+				document.write("Troco R$: " + tro.toFixed(2));
+			}
+		}
+		else if (val >= 3.00) {
+			document.write("Tempo: 120 min<br>");
+
+			if (val !== 3.00) {
+				tro = val - 3.00;
+
+				document.write("Troco R$: " + tro.toFixed(2));
+			}
+		}
+		else if (val < 1.00) {
+			document.write("Valor insuficiente");
+		}
+	</script>
+</body>
+</html>

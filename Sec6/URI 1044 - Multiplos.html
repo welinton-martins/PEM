@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Multiplos</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		var input = prompt("Digite o valor de A e B separados por espaco:");
+		var lines = input.split(' ');
+
+		var A = lines.shift();
+		var B = lines.shift();
+
+		var M = false;
+
+		for (var i = 1; i <= 10; i++) {
+			if (B == A * i) {
+				M = true;
+			}
+		}
+		if(M) {
+			document.write("Sao Multiplos");
+		}
+		else {
+			document.write("Nao sao Multiplos");
+		}
+	</script>
+</body>
+</html>
